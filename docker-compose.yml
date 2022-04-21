@@ -10,7 +10,7 @@ services:
     working_dir: /code/src
     restart: on-failure
     
-    command: bash -c "python3 -m panel serve Interactive_dashboard.ipynb"
+    command: bash -c "python3 -m panel serve Interactive_dashboard.ipynb --autoreload"
 
     environment:
       DEBUG: 1

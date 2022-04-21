@@ -16,4 +16,4 @@ RUN apt-get update && apt-get -y install cron && apt-get -y install htop
 COPY . /code/src/
 
 
-CMD ["panel", "serve", "Interactive_dashboard.ipynb"]
+CMD ["panel", "serve", "Interactive_dashboard.ipynb" , "--autoreload"]
